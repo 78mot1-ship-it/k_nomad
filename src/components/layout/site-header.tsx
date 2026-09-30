@@ -1,11 +1,5 @@
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
-
-const navLinks = [
-  { label: "도시", href: "#cities" },
-  { label: "지도", href: "#map" },
-  { label: "밋업", href: "#community" },
-];
+import { UserMenu } from "@/components/layout/user-menu";
 
 export function SiteHeader() {
   return (
@@ -20,30 +14,8 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-6 md:flex">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
-
         <div className="flex items-center gap-2">
-          <Button
-            variant="ghost"
-            size="sm"
-            nativeButton={false}
-            render={<Link href="#login">로그인</Link>}
-          />
-          <Button
-            size="sm"
-            nativeButton={false}
-            render={<Link href="#signup">무료 가입</Link>}
-          />
+          <UserMenu />
         </div>
       </div>
     </header>

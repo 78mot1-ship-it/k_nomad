@@ -1,9 +1,6 @@
-import { Search, SlidersHorizontal } from "lucide-react";
+import { Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { SortSelect } from "@/components/home/sort-select";
-
-const filters = ["비용", "인터넷", "계절"];
 
 export function HeroSection() {
   return (
@@ -30,27 +27,6 @@ export function HeroSection() {
           </div>
           <Button size="lg" className="h-11 rounded-full px-5">
             검색
-          </Button>
-        </div>
-
-        <div className="flex flex-wrap items-center justify-center gap-2 pt-1">
-          <SortSelect />
-
-          <span className="mx-1 hidden h-4 w-px bg-border sm:block" aria-hidden />
-
-          {filters.map((filter) => (
-            <Button
-              key={filter}
-              variant="outline"
-              size="sm"
-              className="rounded-full bg-background"
-            >
-              {filter}
-            </Button>
-          ))}
-          <Button variant="ghost" size="sm" className="rounded-full">
-            <SlidersHorizontal data-icon="inline-start" />
-            더보기
           </Button>
         </div>
       </div>

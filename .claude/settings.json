@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx --yes playwright install chromium --with-deps)",
+      "Bash(mkdir -p \"/c/Users/jinho/AppData/Local/Temp/claude/c--stduy-noamde/10955fbe-c789-40d2-875b-3b8d1fcb7d82/scratchpad/pw-test\")",
+      "Read(//c/Users/jinho/AppData/Local/Temp/claude/c--stduy-noamde/10955fbe-c789-40d2-875b-3b8d1fcb7d82/scratchpad/**)",
+      "Bash(npm init *)",
+      "Bash(npm install *)",
+      "Read(//c/Users/jinho/AppData/Local/Temp/claude/c--stduy-noamde/10955fbe-c789-40d2-875b-3b8d1fcb7d82/scratchpad/pw-test/**)",
+      "Bash(npx playwright *)",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(SP=\"/c/Users/jinho/AppData/Local/Temp/claude/c--stduy-noamde/10955fbe-c789-40d2-875b-3b8d1fcb7d82/scratchpad/pw-test\"; cat \"$SP/install.log\" 2>&1 | tail -40; echo \"---\"; ls \"$SP\")"
+    ]
+  }
+}
